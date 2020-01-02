@@ -1,0 +1,350 @@
+{
+    "id": "io.flic",
+    "sdk": 2,
+    "brandColor": "#000000",
+    "name": {
+        "en": "Flic",
+        "es": "Flic"
+    },
+    "description": {
+        "en": "Integrate Flic Buttons into Homey",
+        "es": "Integra Botones Flic en tu Homey"
+     },
+    "category": [
+        "tools"
+    ],
+	"version": "0.0.1",
+    "compatibility": ">=3.0.0",
+    "tags": {
+        "en": [
+            "Flic",
+            "Flic 2",
+            "Button"
+        ],
+        "es": [
+            "Flic",
+            "Flic 2",
+            "Botón"
+        ]
+     },
+    "images": {
+        "small": "/assets/images/small.png",
+        "large": "/assets/images/large.png"
+    },
+    "author": {
+        "name": "Gerard Ricart",
+        "email": "gerard.ricart@gmail.com"
+    },
+    "bugs": {
+        "url": "https://github.com/XattSPT/io.flic/issues"
+    },
+    "source": "https://github.com/XattSPT/io.flic",
+    "contributing": {
+        "donate": {
+            "paypal": {
+                "username": "XattSPT"
+            }
+        }
+    },
+    "capabilities": {
+        "click": {
+            "type": "boolean",
+            "title": {
+              "en": "Click",
+              "es": "Click"
+            },
+            "uiComponent": "button",
+            "insights": true,
+            "insightsTitleTrue": {
+              "en": "Clicked",
+              "es": "Click"
+            },
+            "getable": false,
+            "setable": true,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": true,
+            "icon": "assets/icon.svg"
+        },
+        "dclick": {
+            "type": "boolean",
+            "title": {
+              "en": "Double Click",
+              "es": "Doble Click"
+            },
+            "uiComponent": "button",
+            "insights": true,
+            "insightsTitleTrue": {
+              "en": "Clicked",
+              "es": "Click"
+            },
+            "getable": false,
+            "setable": true,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": true,
+            "icon": "/assets/icon.svg"
+        },
+        "hclick": {
+            "type": "boolean",
+            "title": {
+              "en": "Hold Click",
+              "es": "Click Sostenido"
+            },
+            "uiComponent": "button",
+            "insights": true,
+            "insightsTitleTrue": {
+              "en": "Clicked",
+              "es": "Click"
+            },
+            "getable": false,
+            "setable": true,
+            "units": {
+              "en": "",
+              "es": ""
+            },
+            "uiQuickAction": true,
+            "icon": "/assets/icon.svg"
+        }
+    },
+    "drivers": [ 
+        {
+            "id": "flic",
+            "name": {
+                "en": "Flic (using Flic Hub or Phone App)",
+                "es": "Flic (usando Flic Hub or Teléfono)"
+            },
+            "images": {
+                "small": "drivers/flic/assets/images/small.png",
+                "large": "drivers/flic/assets/images/large.png"
+            },
+            "class": "button",
+            "capabilities": [
+                "click",
+                "dclick",
+                "hclick",
+                "measure_battery"
+            ],
+            "capabilitiesOptions": {
+              "click": {
+                  "uiQuickAction": true
+              },
+              "dclick": {
+                "uiQuickAction": false
+              },
+              "hclick": {
+                "uiQuickAction": false
+              },
+              "measure_battery": {
+                "insights": true
+              }
+            },
+            "pair": [
+              {
+                "id": "list_my_devices",
+                "template": "list_devices",
+                "navigation": {
+                    "next": "add_my_devices"
+                }
+              },
+              {
+                  "id": "add_my_devices",
+                  "template": "add_devices"
+              }
+            ],
+            "energy": {
+              "batteries": [ "INTERNAL" ]
+            },
+            "settings": [
+                {
+                  "type": "group",
+                  "label": {
+                    "en": "Funcion on Main UI",
+                    "es": "Función en Pantalla Principal"
+                  },
+                  "children": [
+                    {
+                      "id": "uiselection",
+                      "type": "dropdown",
+                      "label": {
+                          "en": "Main UI Function:",
+                          "es": "Función Pantalla Principal:"
+                      },
+                      "value": "click",
+                      "values":[
+                        {
+                          "id": "none",
+                          "label": {
+                            "en": "None",
+                            "es": "Ninguna"
+                          }
+                        },
+                        {
+                          "id": "click",
+                          "label": {
+                            "en": "Click",
+                            "es": "Click"
+                          }
+                        },
+                        {
+                          "id": "dclick",
+                          "label": {
+                            "en": "Double Click",
+                            "es": "Doble Click"
+                          }
+                        },
+                        {
+                          "id": "hclick",
+                          "label": {
+                            "en": "Hold Click",
+                            "es": "Click Sostenido"
+                          }
+                        }
+                      ]   
+                    }
+                  ]
+                },
+                {
+                  "type": "group",
+                  "label": {
+                    "en": "URL's to COPY & PASTE on Flic App",
+                    "es": "Direcciones URL para COPIAR y PEGAR en Flic App"
+                  },
+                  "children": [
+                        {
+                          "id": "clickurl",
+                          "type": "text",
+                          "label": {
+                              "en": "Click:",
+                              "es": "Click:"
+                          },
+                          "value": "First Configure APP"
+                        },
+                        {
+                          "id": "dclickurl",
+                          "type": "text",
+                          "label": {
+                              "en": "Double Click:",
+                              "es": "Doble Click:"
+                          },
+                          "value": "First Configure APP"
+                        },
+                        {
+                          "id": "hclickurl",
+                          "type": "text",
+                          "label": {
+                              "en": "Hold Click:",
+                              "es": "Click Sostenido:"
+                          },
+                          "value": "First Configure APP"
+                        }
+                    ]
+                },
+                {
+                  "type": "group",
+                  "label": {
+                    "en": "Enable / Disable Buttons and Triggers",
+                    "es": "Activa/Desactiva Botones y Triggers"
+                  },
+                  "children": [
+                        {
+                          "id": "clickon",
+                          "type": "checkbox",
+                          "label": {
+                              "en": "Click Enabled:",
+                              "es": "Click Activado:"
+                          },
+                          "value": true
+                        },
+                        {
+                          "id": "dclickon",
+                          "type": "checkbox",
+                          "label": {
+                              "en": "Double Click Enabled:",
+                              "es": "Doble Click Activado:"
+                          },
+                          "value": true
+                        },
+                        {
+                          "id": "hclickon",
+                          "type": "checkbox",
+                          "label": {
+                              "en": "Hold Click Enabled:",
+                              "es": "Click Sostenido Activado:"
+                          },
+                          "value": true
+                        }
+                    ]
+                },
+                {
+                  "type": "group",
+                  "label": {
+                    "en": "Button Name on Flic App",
+                    "es": "Nombre del Botón en Flic App"
+                  },
+                  "children": [
+                        {
+                          "id": "flicname",
+                          "type": "text",
+                          "label": {
+                              "en": "Name:",
+                              "es": "Nombre:"
+                          },
+                          "value": "Pending"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "flow": {
+      "triggers": [
+        {
+          "title": {
+            "en": "Click",
+            "es": "Click"
+          },
+          "args": [
+            {
+              "type": "device",
+              "name": "device",
+              "filter": "driver_id=flic"
+            }
+          ],
+          "id": "tclick"
+        },
+        {
+          "title": {
+            "en": "Double Click",
+            "es": "Doble Click"
+          },
+          "args": [
+            {
+              "type": "device",
+              "name": "device",
+              "filter": "driver_id=flic"
+            }
+          ],
+          "id": "tdclick"
+        },
+        {
+          "title": {
+            "en": "Hold Click",
+            "es": "Click Sostenido"
+          },
+          "args": [
+            {
+              "type": "device",
+              "name": "device",
+              "filter": "driver_id=flic"
+            }
+          ],
+          "id": "thclick"
+        }
+      ]
+    }
+}

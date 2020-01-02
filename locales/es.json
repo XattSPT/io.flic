@@ -1,0 +1,18 @@
+{
+    "settings" : {
+        "title" : "Configuración Webhook para Flic",
+        "update" : "Datos del Webhook",
+        "webhook" : {
+            "label" : "Intervalo entre actualizaciones en minutos",
+            "id" : "ID:",
+            "secret" : "Secret:",
+            "info" : "1. Crear un nuevo Webhook en https://developer.athom.com/webhooks",
+            "info2" : "2. Cambiar 'return false' por 'return true' dónde indica Cloud Function",
+            "info3" : "3. Copiar los datos en los siguientes campos"
+        },
+        "save" : {
+            "label" : "Grabar y generar direcciones"
+        },
+        "success" : "La configuración ha sido grabada"
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "settings" : {
+        "title" : "Webhook congih for Flic",
+        "update" : "Webhook Data",
+        "webhook" : {
+            "label" : "",
+            "id" : "ID:",
+            "secret" : "Secret:",
+            "info" : "1. Add a new Webhook on https://developer.athom.com/webhooks",
+            "info2" : "2. Change 'return false' for 'return true' where says Cloud Function",
+            "info3" : "3. Copy data to this app"
+        },
+        "save" : {
+            "label" : "Save & generate HTTP routes"
+        },
+        "success" : "Config correctly saved"
+    }
+}
