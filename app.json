@@ -1,6 +1,6 @@
 {
     "id": "io.flic",
-    "sdk": 2,
+    "sdk": 3,
     "brandColor": "#000000",
     "name": {
         "en": "Flic",
@@ -13,8 +13,8 @@
     "category": [
         "tools"
     ],
-	"version": "0.0.2",
-    "compatibility": ">=3.0.0",
+	"version": "1.0.0",
+    "compatibility": ">=5.0.0",
     "tags": {
         "en": [
             "Flic",
@@ -160,54 +160,6 @@
               "batteries": [ "INTERNAL" ]
             },
             "settings": [
-                {
-                  "type": "group",
-                  "label": {
-                    "en": "Funcion on Main UI",
-                    "es": "Función en Pantalla Principal"
-                  },
-                  "children": [
-                    {
-                      "id": "uiselection",
-                      "type": "dropdown",
-                      "label": {
-                          "en": "Main UI Function:",
-                          "es": "Función Pantalla Principal:"
-                      },
-                      "value": "click",
-                      "values":[
-                        {
-                          "id": "none",
-                          "label": {
-                            "en": "None",
-                            "es": "Ninguna"
-                          }
-                        },
-                        {
-                          "id": "click",
-                          "label": {
-                            "en": "Click",
-                            "es": "Click"
-                          }
-                        },
-                        {
-                          "id": "dclick",
-                          "label": {
-                            "en": "Double Click",
-                            "es": "Doble Click"
-                          }
-                        },
-                        {
-                          "id": "hclick",
-                          "label": {
-                            "en": "Hold Click",
-                            "es": "Click Sostenido"
-                          }
-                        }
-                      ]   
-                    }
-                  ]
-                },
                 {
                   "type": "group",
                   "label": {

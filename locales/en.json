@@ -1,0 +1,56 @@
+{
+	"pair": {
+		"title":{
+			"device": "New Flic"
+		},
+		"select": {
+			"done": "The device is added to Homey",
+			"icon": "Select an Icon"
+		}
+	},
+	"icon": {
+		"light": "Light",
+		"button": "Button",
+		"switch": "Switch",
+		"tv": "TV",
+		"hifi": "Hi-Fi",
+		"alarm": "Alarm",
+		"blinds": "Blinds",
+		"contact": "Door/Window",
+		"curtains": "Curtains",
+		"mode": "Mode",
+		"away": "Away",
+		"event": "Event",
+		"holiday": "Holiday",
+		"house": "Home",
+		"manual": "Manual",
+		"motion": "Motion",
+		"movie": "Movie",
+		"party": "Party",
+		"quiet": "Quiet",
+		"radiator": "Radiator",
+		"relax": "Relax",
+		"secure": "Secure",
+		"sleep": "Sleep",
+		"thermostat": "Thermostat",
+		"sensor": "Sensor",
+		"lock": "Lock",
+		"ambiance": "Ambiance",
+		"concentrate": "Concentrate",
+		"day": "Day",
+		"energize": "Energize",
+		"evening": "Evening",
+		"heart": "Heart",
+		"morning": "Morning",
+		"night": "Night",
+		"number-zero": "Zero",
+		"number-one": "One",
+		"number-two": "Two",
+		"number-three": "Three",
+		"number-four": "Four",
+		"reading": "Reading",
+		"work": "Working",
+		"window_closed": "Closed window",
+		"window_open": "Open window"
+	}
+}
