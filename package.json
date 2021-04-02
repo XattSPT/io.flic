@@ -1,19 +1,28 @@
 {
-  "name": "flic",
-  "version": "0.0.1",
-  "description": "This app integrate `Flic` into Homey.",
+  "name": "homeyflic",
+  "version": "1.0.0",
+  "description": "Flic for Homey",
   "main": "app.js",
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {
-    "http.min": "^2.0.1",
-    "socket.io-client": "^2.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XattSPT/io.flic.git"
+  },
+  "keywords": [
+    "Flic",
+    "Homey"
+  ],
   "author": "Gerard Ricart",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XattSPT/io.flic/issues"
+  },
+  "homepage": "https://github.com/XattSPT/io.flic#readme"
 }
