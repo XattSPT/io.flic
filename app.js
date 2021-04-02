@@ -5,7 +5,7 @@ const Homey = require('homey');
 
 class Flic extends Homey.App {
     onInit() {
-        console.log('Successfully init Flic version: %s', Homey.app.manifest.version);
+        console.log('Successfully init Flic version: %s', this.homey.app.manifest.version);
 	};
 
 }
