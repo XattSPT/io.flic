@@ -20,5 +20,9 @@ The repository is available at: https://github.com/XattSPT/io.flic
 
 ## Change Log:
 
+### v 1.0.0
+Updated to SDK V3
+Files cleaned
+
 ### v 0.0.2
 First public release
