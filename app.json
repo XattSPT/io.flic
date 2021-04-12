@@ -7,13 +7,13 @@
     "es": "Flic"
   },
   "description": {
-    "en": "Integrate Flic Buttons into Homey",
-    "es": "Integra Botones Flic en tu Homey"
+    "en": "Control anything with a push",
+    "es": "Controla cualquier cosa con un botón"
   },
   "category": [
     "tools"
   ],
-  "version": "2.0.0",
+  "version": "2.0.1",
   "compatibility": ">=5.0.0",
   "tags": {
     "en": [
