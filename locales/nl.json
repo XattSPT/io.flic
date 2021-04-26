@@ -1,0 +1,56 @@
+{
+  "pair": {
+    "title": {
+      "device": "Nieuwe Flic"
+    },
+    "select": {
+      "done": "Het apparaat is toegevoegd aan Homey",
+      "icon": "Kies een pictogram"
+    }
+  },
+  "icon": {
+    "light": "Licht",
+    "button": "Knop",
+    "switch": "Schakelaar",
+    "tv": "TV",
+    "hifi": "Hi-Fi",
+    "alarm": "Alarm",
+    "blinds": "Jaloezieën",
+    "contact": "Deur/raam",
+    "curtains": "Gordijnen",
+    "mode": "Modus",
+    "away": "Weg",
+    "event": "Gebeurtenis",
+    "holiday": "Vakantie",
+    "house": "Thuis",
+    "manual": "Handmatig",
+    "motion": "Beweging",
+    "movie": "Film",
+    "party": "Feest",
+    "quiet": "Rustig",
+    "radiator": "Radiator",
+    "relax": "Relax",
+    "secure": "Veilig",
+    "sleep": "Slapen",
+    "thermostat": "Thermostaat",
+    "sensor": "Sensor",
+    "lock": "Vergrendelen",
+    "ambiance": "Ambiance",
+    "concentrate": "Concentreren",
+    "day": "Dag",
+    "energize": "Activeren",
+    "evening": "Avond",
+    "heart": "Hart",
+    "morning": "Ochtend",
+    "night": "Nacht",
+    "number-zero": "Nul",
+    "number-one": "Een",
+    "number-two": "Twee",
+    "number-three": "Drie",
+    "number-four": "Vier",
+    "reading": "Lezen",
+    "work": "Werken",
+    "window_closed": "Gesloten raam",
+    "window_open": "Open venster"
+  }
+}
