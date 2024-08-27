@@ -1,0 +1,56 @@
+{
+	"pair": {
+		"title":{
+			"device": "Nowy Flic"
+		},
+		"select": {
+			"done": "Urządzenie jest dodane do Homey",
+			"icon": "Wybierz Ikonę"
+		}
+	},
+	"icon": {
+		"light": "Światło",
+		"button": "Przycisk",
+		"switch": "Przełącznik",
+		"tv": "TV",
+		"hifi": "Hi-Fi",
+		"alarm": "Alarm",
+		"blinds": "Żaluzje",
+		"contact": "Drzwi/Okno",
+		"curtains": "Zasłony",
+		"mode": "Tryb",
+		"away": "Poza",
+		"event": "Wydarzenie",
+		"holiday": "Święto",
+		"house": "Dom",
+		"manual": "Ręczne",
+		"motion": "Ruch",
+		"movie": "Film",
+		"party": "Impreza",
+		"quiet": "Cicho",
+		"radiator": "Grzejnik",
+		"relax": "Relaks",
+		"secure": "Bezpiecznie",
+		"sleep": "Sen",
+		"thermostat": "Termostat",
+		"sensor": "Czujnik",
+		"lock": "Zamek",
+		"ambiance": "Atmosfera",
+		"concentrate": "Skupienie",
+		"day": "Dzień",
+		"energize": "Pobudzać",
+		"evening": "Wieczór",
+		"heart": "Serce",
+		"morning": "Poranek",
+		"night": "Noc",
+		"number-zero": "Zero",
+		"number-one": "Jeden",
+		"number-two": "Dwa",
+		"number-three": "Trzy",
+		"number-four": "Cztery",
+		"reading": "Czytanie",
+		"work": "Pracowanie",
+		"window_closed": "Zamknięte okno",
+		"window_open": "Otwarte okno"
+	}
+}
