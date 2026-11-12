@@ -1,2 +1,7 @@
 .homeychangelog.json
 env.json
+
+
+# Added by Homey CLI
+/.homeybuild/
+node_modules/
